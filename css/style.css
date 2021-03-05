@@ -18,7 +18,7 @@ html {
 
 .nav li {
   font-size: 3rem;
-  color: #fff;
+  color: black;
   display: inline-block;
   margin: 0 2rem;
   text-transform: uppercase;
@@ -26,13 +26,13 @@ html {
 
 .title-container {
   background-color: black;
-  height: 100vh;
+  height: 130vh;
   clip-path: polygon(0 0, 65% 0, 100% 100%, 0% 100%);
 }
 
 .title-sub-box {
   position: absolute;
-  margin-top: 20vh;
+  margin-top: 10%;
   margin-left: 10%;
   letter-spacing: 1rem;
 }
@@ -46,4 +46,27 @@ html {
   font-size: 3rem;
   position: absolute;
   right: 0;
+}
+
+.intro-container {
+  position: absolute;
+  margin-top: 30%;
+  margin-left: 10%;
+  width: 33%;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.projects {
+  padding: 8rem 10%;
+  margin-bottom: 5rem;
+  background-color: #fff;
+  font-size: 3rem;
+  height: 80vh;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 24%, 100% 100%, 0 100%);
+}
+
+.projects-title {
+  color: #6fcae4;
 }
