@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #6fcae4;
+  font-size: 62.5%;
+  font-family: "Bebas Neue", cursive;
+}
+
+.nav-container {
+  position: absolute;
+  right: 3%;
+  padding-top: 2rem;
+}
+
+.nav li {
+  font-size: 3rem;
+  color: #fff;
+  display: inline-block;
+  margin: 0 2rem;
+  text-transform: uppercase;
+}
+
+.title-container {
+  background-color: black;
+  height: 100vh;
+  clip-path: polygon(0 0, 65% 0, 100% 100%, 0% 100%);
+}
+
+.title-sub-box {
+  position: absolute;
+  margin-top: 20vh;
+  margin-left: 10%;
+  letter-spacing: 1rem;
+}
+.title {
+  color: #fff;
+  font-size: 6rem;
+}
+
+.sub-title {
+  color: #6fcae4;
+  font-size: 3rem;
+  position: absolute;
+  right: 0;
+}
