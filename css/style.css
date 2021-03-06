@@ -1,72 +1,62 @@
 * {
   padding: 0;
   margin: auto;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
   background-color: #6fcae4;
   font-size: 62.5%;
-  font-family: "Bebas Neue", cursive;
-}
+  font-family: "Bebas Neue", cursive; }
 
-.nav-container {
+.nav {
   position: absolute;
   right: 3%;
-  padding-top: 2rem;
-}
+  padding-top: 2rem; }
+  .nav__list-items {
+    font-size: 3rem;
+    color: #292929;
+    display: inline-block;
+    margin: 0 2rem;
+    text-transform: uppercase; }
 
-.nav li {
-  font-size: 3rem;
-  color: black;
-  display: inline-block;
-  margin: 0 2rem;
-  text-transform: uppercase;
-}
+.title-box__container {
+  background-color: #292929;
+  height: 110vh;
+  clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0 0); }
 
-.title-container {
-  background-color: black;
-  height: 130vh;
-  clip-path: polygon(0 0, 65% 0, 100% 100%, 0% 100%);
-}
-
-.title-sub-box {
+.title-box__sub-box {
   position: absolute;
   margin-top: 10%;
   margin-left: 10%;
-  letter-spacing: 1rem;
-}
-.title {
-  color: #fff;
-  font-size: 6rem;
-}
+  letter-spacing: 1rem; }
 
-.sub-title {
+.title-box__title {
+  color: #ffffff;
+  font-size: 6rem; }
+
+.title-box__sub-title {
   color: #6fcae4;
   font-size: 3rem;
   position: absolute;
-  right: 0;
-}
+  right: 0; }
 
-.intro-container {
+.intro-box__container {
   position: absolute;
-  margin-top: 30%;
+  margin-top: 25%;
   margin-left: 10%;
   width: 33%;
-  color: #fff;
-  font-size: 3rem;
-}
+  color: #ffffff;
+  font-size: 3rem; }
 
 .projects {
-  padding: 8rem 10%;
+  position: relative;
+  margin-top: -15rem;
+  padding: 20rem 10%;
   margin-bottom: 5rem;
-  background-color: #fff;
+  background-color: #6fcae4;
   font-size: 3rem;
   height: 80vh;
   text-align: center;
-  clip-path: polygon(0 0, 100% 24%, 100% 100%, 0 100%);
-}
-
-.projects-title {
-  color: #6fcae4;
-}
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%); }
+  .projects__title {
+    color: #ffffff; }

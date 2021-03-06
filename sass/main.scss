@@ -1,0 +1,88 @@
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+$color-primary: #6fcae4;
+$color-secondary: #292929;
+$color-tertiary: #ffffff;
+
+* {
+  padding: 0;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $color-primary;
+  font-size: 62.5%;
+  font-family: "Bebas Neue", cursive;
+}
+
+.nav {
+  position: absolute;
+  right: 3%;
+  padding-top: 2rem;
+
+  &__list-items {
+    font-size: 3rem;
+    color: $color-secondary;
+    display: inline-block;
+    margin: 0 2rem;
+    text-transform: uppercase;
+  }
+}
+
+.title-box {
+  &__container {
+    background-color: $color-secondary;
+    height: 110vh;
+    clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0 0);
+  }
+
+  &__sub-box {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+    letter-spacing: 1rem;
+  }
+
+  &__title {
+    color: $color-tertiary;
+    font-size: 6rem;
+  }
+
+  &__sub-title {
+    color: $color-primary;
+    font-size: 3rem;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.intro-box {
+  &__container {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 10%;
+    width: 33%;
+    color: $color-tertiary;
+    font-size: 3rem;
+  }
+}
+
+.projects {
+  position: relative;
+  margin-top: -15rem;
+  padding: 20rem 10%;
+  margin-bottom: 5rem;
+  background-color: $color-primary;
+  font-size: 3rem;
+  height: 80vh;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+
+  &__title {
+    color: $color-tertiary;
+  }
+}
