@@ -14,10 +14,10 @@
   <body>
     <div class="nav">
       <ul class="nav__group">
-        <li class="nav__list-items">Projects</li>
-        <li class="nav__list-items">Blog</li>
-        <li class="nav__list-items">Bio</li>
-        <li class="nav__list-items">Contact</li>
+        <a href="#projects"><li class="nav__list-items">Projects</li></a>
+        <a href="#"><li class="nav__list-items">Blog</li></a>
+        <a href="#bio"><li class="nav__list-items">Bio</li></a>
+        <a href="#contact"><li class="nav__list-items">Contact</li></a>
       </ul>
     </div>
 
@@ -36,22 +36,119 @@
       </div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="projects">
       <h3 class="projects__title">Projects</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ex, quaerat
-        numquam et voluptatibus vero quae! Assumenda qui pariatur cupiditate
-        impedit quis! Optio repellat repudiandae error, quibusdam aliquid odit
-        excepturi Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Libero soluta cum architecto, vero nisi ipsum necessitatibus maxime ipsa
-        illum dolore dolorem optio laborum labore placeat exercitationem alias,
-        vitae nesciunt hic!
+        I've had the pleasure of working on many different styles of websites. A
+        few of my clients are photographers, real-estate agents, and tour
+        guides. Whatever type of service you offer, I'm sure we can make
+        something that will attract clients and represent your brand the way you
+        want to!
       </p>
     </div>
 
     <div class="contact-section">
-      <h1 class="contact-title">Interested in working together?</h1>
-      <a href="#" class="contact-btn btn"> Contact Me </a>
+      <h1 class="contact-title" id="contact">
+        Interested in working together?
+      </h1>
+      <a href="#" class="contact-btn"> Contact Me </a>
+
+      <div class="container">
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id nemo
+              porro cumque quidem sit ducimus. Laudantium doloribus architecto,
+              dolores et recusandae dolor omnis, ipsa est, quos veritatis labore
+              quia obcaecati.
+            </p>
+            <div class="info-box">
+              <div class="information">
+                <i class="fas fa-location-arrow icon"></i>
+                <p>98723 Address ST, MI 48313</p>
+                <p>(586)423-4030</p>
+                <p>arsenaultwebdev@gmail.com</p>
+              </div>
+              <!-- <div class="information">
+                <i class="fas fa-envelope-square icon"></i>
+                <p>ericswkshp@gmail.com</p>
+              </div> -->
+              <!-- <div class="information">
+                <i class="fas fa-phone icon"></i>
+                <p>(586)423-4030</p>
+              </div> -->
+            </div>
+            <div class="social-media">
+              <p>Let's Connect!</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form action="index.html">
+              <h3 class="title">Contact Me</h3>
+              <div class="input-container">
+                <input type="text" name="name" class="input" />
+                <label for="">Username</label>
+                <span>Username</span>
+              </div>
+
+              <div class="input-container">
+                <input type="email" name="email" class="input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+
+              <div class="input-container textarea">
+                <textarea name="message" class="input"></textarea>
+                <label for="Username">Message</label>
+                <span>Message</span>
+              </div>
+              <input type="submit" value="Send" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="biography" id="bio">
+      <h4 class="about-me">A little about me</h4>
+      <p class="about-me-para">
+        I spent most of my adult life working in the skilled trades, from a
+        repairing helicopter structures in the Army, to welding on nuclear
+        submarines and aircraft carriers for the Navy. It was a privelege to
+        experience those careers, but after becoming a dad, I decided to pursue
+        something less hazardous. A friend suggested I learn to write some code.
+        I was instantly hooked after only a few minutes. I didn't know what I
+        was doing, but I loved it, so I decided to go back to college and pursue
+        a degree in Website Programming. I'm absolutely stoked to get to work on
+        these websites each day. Whether it's for a client or for school, I know
+        I'm going to learn something new every single day.
+      </p>
+    </div>
+
+    <div class="footer">© 2021 Eric Arsenault</div>
+
+    <script src="app.js"></script>
   </body>
 </html>
