@@ -17,7 +17,12 @@ html {
     color: #292929;
     display: inline-block;
     margin: 0 2rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    -webkit-box-reflect: below -10px linear-gradient(transparent, #0005);
+    transition: all 0.3s; }
+    .nav__list-items:hover {
+      text-shadow: #292929 2px 2px 8px;
+      transform: translateY(-2px); }
 
 .title-box__container {
   background-color: #292929;
@@ -60,3 +65,37 @@ html {
   clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%); }
   .projects__title {
     color: #ffffff; }
+
+.contact-section {
+  background-color: #292929;
+  height: 100vh;
+  text-align: center;
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%); }
+
+.contact-title {
+  color: #6fcae4;
+  font-size: 3rem;
+  padding-top: 20rem;
+  margin: 0 auto; }
+
+.contact-btn {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 40px 0;
+  color: #6fcae4;
+  border: solid 3px;
+  border-radius: 5px;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); }
+
+a:hover {
+  background: #6fcae4;
+  color: #050801;
+  border: none;
+  box-shadow: 0 0 5px #6fcae4, 0 0 25px #6fcae4, 0 0 50px #6fcae4, 0 0 200px #6fcae4; }
