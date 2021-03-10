@@ -3,108 +3,10 @@
 @import "base/typography";
 @import "base/utilities";
 
-$color-primary: #6fcae4;
-$color-secondary: #292929;
-$color-tertiary: #ffffff;
-
-$section-title: 5rem;
-$section-title-spacing: 5px;
-
-$paragraph-font-size: 3rem;
-
-* {
-  padding: 0;
-  margin: auto;
-  box-sizing: border-box;
-}
-
-html {
-  background-color: $color-primary;
-  font-size: 62.5%;
-  font-family: "Bebas Neue", cursive;
-}
-
-// NAVIGATION
-.nav {
-  position: absolute;
-  right: 3%;
-  padding-top: 2rem;
-
-  &__list-items {
-    font-size: 3rem;
-    color: $color-secondary;
-    display: inline-block;
-    margin: 0 2rem;
-    text-transform: uppercase;
-    -webkit-box-reflect: below -10px linear-gradient(transparent, #0005);
-    transition: all 0.3s;
-
-    &:hover {
-      text-shadow: $color-secondary 2px 2px 8px;
-      transform: translateY(-2px);
-    }
-  }
-}
-
-// HOME SCREEN
-.title-box {
-  &__container {
-    background-color: $color-secondary;
-    height: 110vh;
-    clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0 0);
-  }
-
-  &__sub-box {
-    position: absolute;
-    margin-top: 10%;
-    margin-left: 10%;
-    letter-spacing: 1rem;
-  }
-
-  &__title {
-    color: $color-tertiary;
-    font-size: 6rem;
-  }
-
-  &__sub-title {
-    color: $color-primary;
-    font-size: 3rem;
-    position: absolute;
-    right: 0;
-  }
-}
-
-.intro-box {
-  &__container {
-    position: absolute;
-    margin-top: 25%;
-    margin-left: 10%;
-    width: 33%;
-    color: $color-tertiary;
-    font-size: $paragraph-font-size;
-  }
-}
-
-// PROJECT SECTION
-
-.projects {
-  position: relative;
-  margin-top: -15rem;
-  padding: 20rem 10%;
-  margin-bottom: 5rem;
-  background-color: $color-primary;
-  font-size: 3rem;
-  height: 80vh;
-  text-align: center;
-  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
-
-  &__title {
-    color: $color-tertiary;
-    font-size: $section-title;
-    letter-spacing: $section-title-spacing;
-    margin-bottom: $paragraph-font-size;
-  }
-}
+@import "components/header";
+@import "scss/fontawesome.scss";
+@import "scss/brands.scss";
+@import "scss/solid.scss";
 
 // CONTACT SECTION
 .contact {
@@ -360,17 +262,17 @@ textarea.input {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, $color-primary, $color-secondary);
-  color: $color-tertiary;
-  text-align: center;
-  line-height: 35px;
-  margin-right: 0.5rem;
-  transition: 0.3s;
+  // background: linear-gradient(45deg, $color-primary, $color-secondary);
+  color: $color-primary;
+  // text-align: center;
+  // line-height: 35px;
+  // margin-right: 0.5rem;
+  // transition: 0.3s;
 }
 
-.social-icons {
-  transform: scale(1.05);
-}
+// .social-icons {
+//   transform: scale(1.05);
+// }
 
 // ABOUT ME
 
@@ -398,69 +300,69 @@ textarea.input {
 
 //QUERIES
 
-@media (max-width: 850px) {
-  .form {
-    grid-template-columns: 1fr;
-  }
+// @media (max-width: 850px) {
+//   .form {
+//     grid-template-columns: 1fr;
+//   }
 
-  .contact-info:before {
-    bottom: initial;
-    top: -75px;
-    right: 65px;
-    transform: scale(0.95);
-  }
-  .text {
-    margin: 1rem 0 1.5rem 0;
-  }
+//   .contact-info:before {
+//     bottom: initial;
+//     top: -75px;
+//     right: 65px;
+//     transform: scale(0.95);
+//   }
+//   .text {
+//     margin: 1rem 0 1.5rem 0;
+//   }
 
-  .social-media {
-    padding: 1.5rem 0 0 0;
-  }
-}
+//   .social-media {
+//     padding: 1.5rem 0 0 0;
+//   }
+// }
 
-@media (max-width: 480px) {
-  .container {
-    padding: 1.5rem;
-  }
+// @media (max-width: 480px) {
+//   .container {
+//     padding: 1.5rem;
+//   }
 
-  .contact-info:before {
-    display: none;
-  }
+//   .contact-info:before {
+//     display: none;
+//   }
 
-  .big-circle {
-    display: none;
-  }
+//   .big-circle {
+//     display: none;
+//   }
 
-  form,
-  .contact-info {
-    padding: 1.7rem 1.6rem;
-  }
+//   form,
+//   .contact-info {
+//     padding: 1.7rem 1.6rem;
+//   }
 
-  .text,
-  .information,
-  .social-media p {
-    font-size: 0.8rem;
-  }
+//   .text,
+//   .information,
+//   .social-media p {
+//     font-size: 0.8rem;
+//   }
 
-  .title {
-    font-size: 1.15rem;
-  }
+//   .title {
+//     font-size: 1.15rem;
+//   }
 
-  .social-icons a {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-  }
+//   .social-icons a {
+//     width: 30px;
+//     height: 30px;
+//     line-height: 30px;
+//   }
 
-  .icon {
-    width: 23px;
-  }
+//   .icon {
+//     width: 23px;
+//   }
 
-  .input {
-    padding: 0.45rem 1.2rem;
-  }
+//   .input {
+//     padding: 0.45rem 1.2rem;
+//   }
 
-  .btn {
-    padding: 0.45rem 1.2rem;
-  }
-}
+//   .btn {
+//     padding: 0.45rem 1.2rem;
+//   }
+// }

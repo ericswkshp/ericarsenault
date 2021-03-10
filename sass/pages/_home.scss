@@ -1,0 +1,38 @@
+// HOME SCREEN
+.title-box {
+  &__container {
+    background-color: $color-secondary;
+    height: 110vh;
+    clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0 0);
+  }
+
+  &__sub-box {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+    letter-spacing: 1rem;
+  }
+
+  &__title {
+    color: $color-tertiary;
+    font-size: 6rem;
+  }
+
+  &__sub-title {
+    color: $color-primary;
+    font-size: 3rem;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.intro-box {
+  &__container {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 10%;
+    width: 33%;
+    color: $color-tertiary;
+    font-size: $paragraph-font-size;
+  }
+}

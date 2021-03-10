@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ericswkshp/ericarsenault#readme",
   "devDependencies": {
+    "font-awesome": "^4.7.0",
     "node-sass": "^5.0.0"
   }
 }

@@ -1,0 +1,19 @@
+// PROJECT SECTION
+.projects {
+  position: relative;
+  margin-top: -15rem;
+  padding: 20rem 10%;
+  margin-bottom: 5rem;
+  background-color: $color-primary;
+  font-size: 3rem;
+  height: 80vh;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+
+  &__title {
+    color: $color-tertiary;
+    font-size: $section-title;
+    letter-spacing: $section-title-spacing;
+    margin-bottom: $paragraph-font-size;
+  }
+}
