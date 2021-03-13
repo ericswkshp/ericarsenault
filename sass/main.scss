@@ -1,9 +1,15 @@
+@import "abstracts/variables";
+
 @import "base/base";
 @import "base/animations";
 @import "base/typography";
 @import "base/utilities";
 
 @import "components/header";
+
+@import "pages/home";
+@import "pages/projects";
+
 @import "scss/fontawesome.scss";
 @import "scss/brands.scss";
 @import "scss/solid.scss";

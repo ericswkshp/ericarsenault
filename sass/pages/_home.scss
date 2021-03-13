@@ -3,7 +3,7 @@
   &__container {
     background-color: $color-secondary;
     height: 110vh;
-    clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(70% 0%, 100% 20%, 100% 100%, 0 100%, 0 0);
   }
 
   &__sub-box {
@@ -22,16 +22,15 @@
     color: $color-primary;
     font-size: 3rem;
     position: absolute;
-    right: 0;
+    right: 5rem;
   }
 }
 
 .intro-box {
   &__container {
     position: absolute;
-    margin-top: 25%;
-    margin-left: 10%;
-    width: 33%;
+    margin-top: 85%;
+    padding: 0 10%;
     color: $color-tertiary;
     font-size: $paragraph-font-size;
   }
