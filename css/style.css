@@ -57,15 +57,54 @@ html {
   padding: 20rem 10%;
   margin-bottom: 5rem;
   background-color: #6fcae4;
-  font-size: 30rem;
+  font-size: 3rem;
   height: 80vh;
   text-align: center;
   clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%); }
   .projects__title {
+    margin-top: -7rem;
     color: #ffffff;
     font-size: 5rem;
     letter-spacing: 5px;
     margin-bottom: 3rem; }
+  .projects__paragraph {
+    position: relative;
+    font-size: 2.4rem;
+    z-index: 14000; }
+
+.contact {
+  position: relative;
+  margin-top: -12rem;
+  background-color: #292929;
+  height: 200vh;
+  text-align: center;
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%); }
+  .contact__title {
+    color: #6fcae4;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    padding-top: 15rem;
+    margin: 0 auto; }
+  .contact__btn {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 40px 0;
+    color: #6fcae4;
+    border: solid 3px;
+    border-radius: 5px;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #0005); }
+  .contact__btn:hover {
+    background: #6fcae4;
+    color: #292929;
+    border: none;
+    box-shadow: 0 0 5px #6fcae4, 0 0 25px #6fcae4, 0 0 50px #6fcae4, 0 0 200px #6fcae4; }
 
 /*!
  * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
@@ -4666,38 +4705,6 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
-
-.contact {
-  background-color: #292929;
-  height: 200vh;
-  text-align: center;
-  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%); }
-  .contact__title {
-    color: #6fcae4;
-    font-size: 5rem;
-    letter-spacing: 5px;
-    padding-top: 30rem;
-    margin: 0 auto; }
-  .contact__btn {
-    position: relative;
-    display: inline-block;
-    padding: 15px 30px;
-    margin: 40px 0;
-    color: #6fcae4;
-    border: solid 3px;
-    border-radius: 5px;
-    font-size: 24px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: 0.5s;
-    letter-spacing: 4px;
-    -webkit-box-reflect: below 5px linear-gradient(transparent, #0005); }
-  .contact__btn:hover {
-    background: #6fcae4;
-    color: #292929;
-    border: none;
-    box-shadow: 0 0 5px #6fcae4, 0 0 25px #6fcae4, 0 0 50px #6fcae4, 0 0 200px #6fcae4; }
 
 form {
   padding: 2.3rem 2.2rem;
