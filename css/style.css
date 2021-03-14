@@ -243,7 +243,7 @@ textarea.input {
   position: relative;
   margin-top: -15rem;
   background-color: #292929;
-  height: 85vh;
+  height: 95vh;
   text-align: center;
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%); }
   .contact__title {
@@ -251,7 +251,8 @@ textarea.input {
     font-size: 5rem;
     letter-spacing: 5px;
     padding-top: 10rem;
-    margin: 0 auto 5rem auto; }
+    margin: 0 10% 5rem 10%;
+    text-transform: uppercase; }
   .contact__btn {
     position: relative;
     display: inline-block;
@@ -282,25 +283,31 @@ textarea.input {
   font-size: 4rem;
   margin: 2rem; }
 
+.nav-item {
+  font-size: 2rem;
+  color: white;
+  padding: 0 5rem; }
+
 a {
   text-decoration: none; }
 
 .biography {
-  height: 100vh;
   text-align: center;
-  padding: 10rem 10%; }
+  padding: 5rem 10%; }
 
 .about-me {
   font-size: 5rem;
-  color: #ffffff; }
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 5rem; }
 
 .about-me-para {
-  font-size: 3rem; }
+  font-size: 2.2rem; }
 
-.shoe {
-  position: absolute;
-  background-color: black;
-  height: 20vh; }
+.footer {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1rem; }
 
 /*!
  * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
