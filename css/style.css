@@ -214,10 +214,10 @@ textarea.input {
 .intro-box__container {
   position: absolute;
   margin-top: 65%;
-  width: 85%;
-  padding: 0 10% 0 10%;
+  width: 100%;
+  padding: 0 10%;
   color: #ffffff;
-  font-size: 2rem; }
+  font-size: 2.2rem; }
 
 .projects {
   position: relative;
@@ -226,7 +226,7 @@ textarea.input {
   margin-bottom: 5rem;
   background-color: #6fcae4;
   font-size: 3rem;
-  height: 80vh;
+  height: 95vh;
   text-align: center;
   clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%); }
   .projects__title {
@@ -237,23 +237,21 @@ textarea.input {
     margin-bottom: 3rem; }
   .projects__paragraph {
     position: relative;
-    font-size: 2.4rem;
-    z-index: 14000; }
+    font-size: 2.2rem; }
 
 .contact {
   position: relative;
-  margin-top: -12rem;
-  padding-top: 5rem;
+  margin-top: -15rem;
   background-color: #292929;
-  height: 200vh;
+  height: 85vh;
   text-align: center;
-  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%); }
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%); }
   .contact__title {
     color: #ffffff;
     font-size: 5rem;
     letter-spacing: 5px;
-    padding-top: 15rem;
-    margin: 0 auto; }
+    padding-top: 10rem;
+    margin: 0 auto 5rem auto; }
   .contact__btn {
     position: relative;
     display: inline-block;
@@ -274,6 +272,18 @@ textarea.input {
     color: #292929;
     border: none;
     box-shadow: 0 0 5px #6fcae4, 0 0 25px #6fcae4, 0 0 50px #6fcae4, 0 0 200px #6fcae4; }
+
+.icons {
+  position: relative;
+  margin-top: 5rem; }
+
+.fab {
+  color: #6fcae4;
+  font-size: 4rem;
+  margin: 2rem; }
+
+a {
+  text-decoration: none; }
 
 .biography {
   height: 100vh;
