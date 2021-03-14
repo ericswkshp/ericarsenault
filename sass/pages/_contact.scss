@@ -2,13 +2,14 @@
 .contact {
   position: relative;
   margin-top: -12rem;
+  padding-top: 5rem;
   background-color: $color-secondary;
   height: 200vh;
   text-align: center;
   clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
 
   &__title {
-    color: $color-primary;
+    color: $color-tertiary;
     font-size: $section-title;
     letter-spacing: $section-title-spacing;
     padding-top: 15rem;

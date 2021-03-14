@@ -1,0 +1,23 @@
+// ABOUT ME
+
+.biography {
+  height: 100vh;
+
+  text-align: center;
+  padding: 10rem 10%;
+}
+
+.about-me {
+  font-size: $section-title;
+  color: $color-tertiary;
+}
+
+.about-me-para {
+  font-size: $paragraph-font-size;
+}
+
+.shoe {
+  position: absolute;
+  background-color: black;
+  height: 20vh;
+}
