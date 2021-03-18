@@ -182,15 +182,17 @@ textarea.input {
   z-index: 1000;
   width: 100%; }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: right;
   display: block;
   color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+  padding: 5px 10px 1px;
+  border-radius: 3px;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2.4rem;
   transition: all 0.3s ease; }
 
 /* Change the color of links on hover */
@@ -201,14 +203,11 @@ textarea.input {
 /* Add an active class to highlight the current page */
 .topnav a.active {
   background-color: #292929;
-  color: white; }
+  color: #ffffff; }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none; }
-
-.icon {
-  margin: 1rem; }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -316,6 +315,23 @@ textarea.input {
     color: #292929;
     border: none;
     box-shadow: 0 0 5px #6fcae4, 0 0 25px #6fcae4, 0 0 50px #6fcae4, 0 0 200px #6fcae4; }
+
+.icons {
+  position: relative;
+  margin-top: 5rem; }
+
+.fab {
+  color: #6fcae4;
+  font-size: 4rem;
+  margin: 2rem; }
+
+.nav-item {
+  font-size: 2rem;
+  color: white;
+  padding: 0 5rem; }
+
+a {
+  text-decoration: none; }
 
 .biography {
   text-align: center;

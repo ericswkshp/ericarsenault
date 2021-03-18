@@ -6,15 +6,17 @@
   width: 100%;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: right;
   display: block;
   color: $color-tertiary;
   text-align: center;
-  padding: 14px 16px;
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+  padding: 5px 10px 1px;
+  border-radius: 3px;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2.4rem;
   transition: all 0.3s ease;
 }
 
@@ -27,16 +29,12 @@
 /* Add an active class to highlight the current page */
 .topnav a.active {
   background-color: $color-secondary;
-  color: white;
+  color: $color-tertiary;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
-}
-
-.icon {
-  margin: 1rem;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
