@@ -307,7 +307,7 @@ nav a:hover {
 .title-box__container {
   background-color: #292929;
   width: 100%;
-  padding: 10rem 3rem 2rem; }
+  padding: 10rem 3rem 5rem; }
 
 .title-box__title {
   color: #ffffff;
@@ -333,7 +333,7 @@ nav a:hover {
   color: #ffffff; }
 
 .projects {
-  padding: 3rem 2rem;
+  padding: 5rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -344,6 +344,7 @@ nav a:hover {
 
 .contact {
   background-color: #292929;
+  padding: 5rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -383,7 +384,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem; }
+  padding: 5rem 3rem; }
 
 .about-me {
   font-size: 3rem;
