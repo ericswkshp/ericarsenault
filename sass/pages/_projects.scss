@@ -1,7 +1,6 @@
 // PROJECT SECTION
 .projects {
   padding: 5rem 3rem;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,5 +9,13 @@
   &__title {
     color: $color-tertiary;
     margin-bottom: 2rem;
+  }
+
+  @media (min-width: 700px) {
+    padding: 10rem 10%;
+  }
+
+  @media (min-width: 900px) {
+    padding: 15rem 25%;
   }
 }

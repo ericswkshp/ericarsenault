@@ -83,11 +83,14 @@ nav a {
 
   text-transform: uppercase;
   opacity: 0;
-  transition: opacity 150ms ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 nav a:hover {
-  color: #000;
+  background-color: $color-secondary;
+  color: $color-primary;
+  padding: 1rem 2rem;
+  border-radius: 3px;
 }
 
 .nav-toggle:checked ~ nav {
