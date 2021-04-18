@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  margin: auto;
+  margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -226,82 +226,208 @@ textarea.input {
   margin: 1.5rem 0 2rem 0;
 }
 
-.topnav {
-  position: absolute;
-  background-color: transparent;
-  overflow: hidden;
+header {
+  background: #292929;
+  text-align: center;
+  position: fixed;
   z-index: 1000;
   width: 100%;
+  padding: 1rem 0;
 }
 
-.topnav a {
-  float: right;
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 1rem;
-  margin-right: 1.5rem;
-  padding: 5px 10px 1px;
-  border-radius: 3px;
-  text-decoration: none;
-  font-size: 2.4rem;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ffffff;
-  color: #292929;
-}
-
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: #292929;
-  color: #ffffff;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
+.nav-toggle {
   display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(173, 216, 230, 0.75);
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {
-    position: absolute;
-    background-color: #6fcae4;
-    height: 50vh;
-    padding-top: 25%;
+.nav-toggle-label {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 3rem;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 3rem;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-transition: opacity 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.nav-toggle:checked ~ nav {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  text-align: center;
+  padding-top: 3rem;
+  width: 100%;
+  background-color: #6fcae4;
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  -webkit-transition: opacity 250ms ease-in-out 250ms;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
   }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+  header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
-  .topnav.responsive a {
-    float: none;
+  .logo {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+  }
+  nav {
+    /* the following lines are not from my video, but add Edge support */
+    position: relative;
+    text-align: left;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    background: none;
+    top: initial;
+    left: initial;
+    /* end Edge support stuff */
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+  nav a::before {
+    content: "";
     display: block;
-    text-align: center;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: -0.75em;
+    left: 0;
+    right: 0;
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transition: -webkit-transform ease-in-out 250ms;
+    transition: -webkit-transform ease-in-out 250ms;
+    transition: transform ease-in-out 250ms;
+    transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
+  }
+  nav a:hover::before {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
 }
 
 .title-box__container {
   background-color: #292929;
-  height: 90vh;
-  -webkit-clip-path: polygon(70% 0%, 100% 20%, 100% 100%, 0 100%, 0 0);
-          clip-path: polygon(70% 0%, 100% 20%, 100% 100%, 0 100%, 0 0);
+  width: 100%;
+  padding: 10rem 3rem 2rem;
+}
+
+.title-box__title {
+  color: #ffffff;
+  font-size: 5rem;
+  letter-spacing: 1rem;
+}
+
+.title-box__sub-title {
+  color: #6fcae4;
+  font-size: 3rem;
+  letter-spacing: 1rem;
 }
 
 .title-box__sub-box {
@@ -311,74 +437,62 @@ textarea.input {
   letter-spacing: 0.5rem;
 }
 
-.title-box__title {
-  color: #ffffff;
-  font-size: 5rem;
-}
-
-.title-box__sub-title {
-  color: #6fcae4;
-  font-size: 2rem;
-  margin-left: 5.4rem;
-}
-
 .intro-box__container {
-  position: absolute;
-  margin-top: 65%;
   width: 100%;
-  padding: 0 10%;
+  margin-top: 2.5rem;
+}
+
+.intro-box__paragraph {
   color: #ffffff;
 }
 
 .projects {
-  position: relative;
-  margin-top: -15rem;
-  padding: 20rem 10%;
-  background-color: #6fcae4;
-  font-size: 3rem;
-  text-align: center;
-  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+  padding: 3rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects__title {
-  margin-top: -7rem;
   color: #ffffff;
-  font-size: 5rem;
-  letter-spacing: 5px;
-  margin-bottom: 3rem;
-}
-
-.projects__paragraph {
-  position: relative;
-  font-size: 2.9rem;
+  margin-bottom: 2rem;
 }
 
 .contact {
-  position: relative;
-  margin-top: -15rem;
   background-color: #292929;
-  height: 95vh;
-  text-align: center;
-  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact__title {
   color: #ffffff;
-  font-size: 5rem;
-  letter-spacing: 5px;
-  padding-top: 10rem;
-  margin: 0 10% 5rem 10%;
   text-transform: uppercase;
+  font-size: 3rem;
+  margin: 3rem 0;
 }
 
 .contact__btn {
-  position: relative;
-  display: inline-block;
-  padding: 15px 30px;
-  margin: 40px 0;
   color: #6fcae4;
+  padding: 15px 30px;
+  margin-bottom: 8rem;
   border: solid 3px;
   border-radius: 5px;
   font-size: 24px;
@@ -399,21 +513,10 @@ textarea.input {
           box-shadow: 0 0 5px #6fcae4, 0 0 25px #6fcae4, 0 0 50px #6fcae4, 0 0 200px #6fcae4;
 }
 
-.icons {
-  position: relative;
-  margin-top: 5rem;
-}
-
 .fab {
   color: #6fcae4;
   font-size: 4rem;
   margin: 2rem;
-}
-
-.nav-item {
-  font-size: 2rem;
-  color: white;
-  padding: 0 5rem;
 }
 
 a {
@@ -421,19 +524,24 @@ a {
 }
 
 .biography {
-  text-align: center;
-  padding: 5rem 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
 }
 
 .about-me {
-  font-size: 5rem;
+  font-size: 3rem;
   color: #ffffff;
   text-transform: uppercase;
-  margin-bottom: 5rem;
-}
-
-.about-me-para {
-  font-size: 2.2rem;
+  margin-bottom: 2rem;
 }
 
 .footer {

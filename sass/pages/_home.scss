@@ -2,8 +2,20 @@
 .title-box {
   &__container {
     background-color: $color-secondary;
-    height: 90vh;
-    clip-path: polygon(70% 0%, 100% 20%, 100% 100%, 0 100%, 0 0);
+    width: 100%;
+    padding: 10rem 3rem 2rem;
+  }
+
+  &__title {
+    color: $color-tertiary;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+  }
+
+  &__sub-title {
+    color: $color-primary;
+    font-size: 3rem;
+    letter-spacing: 1rem;
   }
 
   &__sub-box {
@@ -12,25 +24,15 @@
     margin-left: 10%;
     letter-spacing: 0.5rem;
   }
-
-  &__title {
-    color: $color-tertiary;
-    font-size: 5rem;
-  }
-
-  &__sub-title {
-    color: $color-primary;
-    font-size: 2rem;
-    margin-left: 5.4rem;
-  }
 }
 
 .intro-box {
   &__container {
-    position: absolute;
-    margin-top: 65%;
     width: 100%;
-    padding: 0 10%;
+    margin-top: 2.5rem;
+  }
+
+  &__paragraph {
     color: $color-tertiary;
   }
 }

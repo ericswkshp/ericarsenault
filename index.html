@@ -20,24 +20,40 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="topnav" id="myTopnav">
-      <a href="#projects">Projects</a>
-      <a href="#bio">About</a>
-      <a href="#contact">Contact</a>
-      <!-- <a href="#about">About</a> -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+    <!-- <div class="nav container" id="myTopnav">
+      <ul>
+        <li>
+           <a href="#contact">Contact</a>               
+        </li>
+        <li>
+          <a href="#bio">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        
+    </div> -->
+    <header>
+      <input type="checkbox" class="nav-toggle" id="nav-toggle" />
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#bio">About</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
 
     <div class="title-box__container">
-      <div class="title-box__sub-box">
-        <h1 class="title-box__title">
-          Eric <br />
-          Arsenault
-        </h1>
-        <h2 class="title-box__sub-title">Web Developer</h2>
-      </div>
+      <h1 class="title-box__title">
+        Eric <br />
+        Arsenault
+      </h1>
+      <h2 class="title-box__sub-title">Web Developer</h2>
 
       <div class="intro-box__container">
         <p class="intro-box__paragraph">

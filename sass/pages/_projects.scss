@@ -1,25 +1,14 @@
 // PROJECT SECTION
 .projects {
-  position: relative;
-  margin-top: -15rem;
-  padding: 20rem 10%;
-  // margin-bottom: 5rem;
-  background-color: $color-primary;
-  font-size: 3rem;
-  // height: 85vh;
-  text-align: center;
-  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+  padding: 3rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &__title {
-    margin-top: -7rem;
     color: $color-tertiary;
-    font-size: $section-title;
-    letter-spacing: $section-title-spacing;
-    margin-bottom: $paragraph-font-size;
-  }
-
-  &__paragraph {
-    position: relative;
-    font-size: 2.9rem;
+    margin-bottom: 2rem;
   }
 }
